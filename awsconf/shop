@@ -4,8 +4,7 @@ server {
 
     location = /favicon.ico { access_log off; log_not_found off; }
     location /static/ {
-        autoindex on;
-        root /home/ubuntu/shop-aws;
+        alias /home/ubuntu/shop-aws;
     }
 
     location / {
